@@ -1,0 +1,34 @@
+{
+   "user":[
+        {
+          "email": "hi@test.com",
+          "password": "123",
+          "islogin": "true"
+        },
+        {
+          "email": "hello@test.com",
+          "password": "123",
+          "islogin": "true"
+        },
+        {
+          "email": "get@test.com",
+          "password": "123",
+          "islogin": "true"
+        },
+        {
+          "email": "what@test.com",
+          "password": "123",
+          "islogin": "true"
+        },
+        {
+          "email": "how@test.com",
+          "password": "123",
+          "islogin": "true"
+        },
+        {
+          "email": "darshna@test.com",
+          "password": "d@123",
+          "islogin": "true"
+        }
+      ]
+}

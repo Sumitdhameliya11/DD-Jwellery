@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: #222;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 40px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    z-index: 999;
+  }
+  
+  .header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 6px 6px 6px black;
+  }
+  
+  .header .logo span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #cfd3db;
+  }
+  
+  .nav .nav-item {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+  }
+  
+  .nav .nav-item a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    filter: drop-shadow(4px 2px 2px white);
+    padding-bottom: 10px;
+    transition: all 0.3s;
+  }
+  
+  .nav .nav-item a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    color: black;
+    background: black;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav .nav-item a:hover {
+    color: crimson;
+  }
+  .nav .nav-item a:hover::before {
+    width: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .header .menu {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .header .icon .menu {
+    width: 40px;
+    height: 40px;
+    color: black;
+  }
+  
+  .header .icon .menu[name="close-outline"] {
+    display: none;
+  }
+  
+  /* ==============responsive code====== */
+  
+  @media (max-width: 980px) {
+    .header .icon .menu {
+      display: block;
+      border: 3px solid black;
+      color: black;
+      z-index: 999;
+    }
+  
+    .header {
+      position: relative;
+    }
+  
+    .nav {
+      width: 100%;
+      height: 100vh;
+      background: lightblue;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* ===========transition======== */
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .active .nav {
+      transform: translateX(0%);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+    .active .icon .menu[name="close-outline"] {
+      display: block;
+    }
+  
+    .active .icon .menu[name="menu-outline"] {
+      display: none;
+    }
+  }
+
+  /* ==============home style =============== */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/banner1.png");    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  margin-right: 300px;
+}
+
+.home .container .cl-left {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px 25px;
+  padding-right: 300px;
+}
+
+.home .container .cl-left .heading h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 3px 3px 3px #cfd3db;
+  padding-bottom: 15px;
+}
+
+.home .container .cl-left .email .text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 3px 3px 3px #cfd3db;
+  padding-bottom: 3px;
+}
+
+.home .container .cl-left .email .text-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #cfd3db;
+  padding-bottom: 15px;
+}
+
+.home .container .cl-left .tene .text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 3px 3px 3px #cfd3db;
+  padding-bottom: 3px;
+}
+
+.home .container .cl-left .tene .phone {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #cfd3db;
+}
+
+.home .container .cl-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.home .container .cl-right .form input {
+  margin-bottom: 20px;
+}
+
+.home .cl-right .title h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: justify;
+  color: #cfd3db;
+  padding-bottom: 20px;
+  text-shadow: 3px 3px 3px #000;
+}
+
+.home .container .cl-right .form .input input,
+.home .container .cl-right .form .password input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  width: 400px;
+  height: 50px;
+  color: #cfd3db;
+  text-shadow: 3px 3px 3px #000;
+  border: none;
+  border-bottom: 3px solid crimson;
+  border-radius: 8px;
+  padding: 10px;
+  background: none;
+  outline: none;
+}
+
+.home .container .cl-right .form .input ::placeholder,
+.home .container .cl-right .form .password ::placeholder {
+  color: #cfd3db;
+  text-shadow: 3px 3px 3px #000;
+}
+
+.home .container .cl-right .form .btn input {
+  padding: 10px 20px;
+  background: rgba(220, 20, 60, 0.778);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.home .container #email_error,
+.home .container #password_error {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ===============footer style ============== */
+footer {
+    height: 80px;
+    background: #111;
+    text-align: center;
+    padding: 20px 23px;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  footer span a {
+    color: crimson;
+    text-decoration: none;
+  }
+  
+  footer span a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Jwellery</title>
+    <!-- ========fa icon link==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="../style/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./login.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header" id="Home">
+        <div class="logo">
+            <h1 class="heading">DD<span>Jwellery</span></h1>
+        </div>
+        <nav class="nav">
+            <ui class="nav-item">
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../product/product.html">Product</a></li>
+                <li><a href="../client/client.html">Our Client</a></li>
+                <li><a href="../order/order.html">Order</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+            </ui>
+        </nav>
+        <div class="icon">
+            <ion-icon name="menu-outline" class="menu"></ion-icon>
+            <ion-icon name="close-outline" class="menu"></ion-icon>
+        </div>
+    </header>
+
+    <!-- ==================home section======================= -->
+    <section class="home">
+        <div class="container">
+            <div class="cl-left">
+                <div class="heading">
+                    <h3>NS Medical</h3>
+                </div>
+                <div class="email">
+                    <div class="text ">Email:- ddjwellery01@gmail.com</div>
+                </div>
+                <div class="tene">
+                    <div class="text">Telephone:- 0261 225 555</div>
+                </div>
+            </div>
+
+            <div class="cl-right">
+                <div class="title">
+                    <h2>Login</h2>
+                </div>
+                <div class="form">
+                    <form action="../home/home.html" method="get">
+                        <div class="input">
+                            <input type="email" name="" id="email" placeholder="Enter the Email">
+                            <div id="email_error"></div>
+                        </div>
+                        <div class="password">
+                            <input type="password" name="" id="password" placeholder="Enter password">
+                            <div id="password_error"></div>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="Login" onclick="return fun()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========footer codeing=============== -->
+    <footer class="footer">
+        <span>Created By <a href="#">Ms.dholariya</a> |
+            <span class="far fa-copyright"></span> 2023 Allright reserved.
+        </span>
+    </footer>
+
+    <!-- ========script============ -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../home/home.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

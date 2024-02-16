@@ -1,0 +1,32 @@
+<products>
+    <product>
+        <image>../img/bangles.jpg</image>
+        <description>buy thing at amazing price</description>
+        <buttonLink>#home</buttonLink>
+    </product>
+    <product>
+        <image>../img/img-5.jpg</image>
+        <description>buy thing at amazing price</description>
+        <buttonLink>#home</buttonLink>
+    </product>
+    <product>
+        <image>../img/img-1.jpg</image>
+        <description>buy thing at amazing price</description>
+        <buttonLink>#home</buttonLink>
+    </product>
+    <product>
+        <image>../img/img-8.jpg</image>
+        <description>buy thing at amazing price</description>
+        <buttonLink>#home</buttonLink>
+    </product>
+    <product>
+        <image>../img/set.jpg</image>
+        <description>buy thing at amazing price</description>
+        <buttonLink>#home</buttonLink>
+    </product>
+    <product>
+        <image>../img/ring -1.jpg</image>
+        <description>buy thing at amazing price</description>
+        <buttonLink>#home</buttonLink>
+    </product>
+</products>

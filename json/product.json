@@ -1,0 +1,34 @@
+{
+    "product":[
+        {
+            "image": "../img/bangles.jpg",
+            "description": "buy thing at amazing price",
+            "buttonLink": "#home"
+          },
+          {
+            "image": "../img/img-5.jpg",
+            "description": "buy thing at amazing price",
+            "buttonLink": "#home"
+          },
+          {
+            "image": "../img/img-1.jpg",
+            "description": "buy thing at amazing price",
+            "buttonLink": "#home"
+          },
+          {
+            "image": "../img/img-8.jpg",
+            "description": "buy thing at amazing price",
+            "buttonLink": "#home"
+          },
+          {
+            "image": "../img/set.jpg",
+            "description": "buy thing at amazing price",
+            "buttonLink": "#home"
+          },
+          {
+            "image": "../img/ring -1.jpg",
+            "description": "buy thing at amazing price",
+            "buttonLink": "#home"
+          }
+    ]
+}
